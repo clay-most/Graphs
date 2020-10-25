@@ -32,7 +32,7 @@ traversal_path = []
 # directions and opposites "bread_crumbs" for back-tracking
 directions = {"n": "s", "e": "w", "s": "n", "w": "e"}
 
-##first pass
+##first pass 1004 moves
 # bread_crumbs = []
 # visited = {}
 # while len(visited) < len(room_graph)-1:
@@ -52,7 +52,7 @@ directions = {"n": "s", "e": "w", "s": "n", "w": "e"}
 #     bread_crumbs.append(directions[current])
 #     player.travel(current)
 
-##recursive
+##recursive 1000 moves
 def recurse(current_room, visited = set()):
     bread_crumbs=[]
     for direction in player.current_room.get_exits():
